@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC384E93C9DD0268896FB01F /* Pods_funkoPoPDataBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34047CD0DFAF534A50262ED9 /* Pods_funkoPoPDataBase.framework */; };
 		EE022B88271EDC3E00181ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE022B87271EDC3E00181ACA /* AppDelegate.swift */; };
 		EE022B8A271EDC3E00181ACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE022B89271EDC3E00181ACA /* SceneDelegate.swift */; };
 		EE022B8C271EDC3E00181ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE022B8B271EDC3E00181ACA /* ViewController.swift */; };
 		EE022B91271EDC4000181ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE022B90271EDC4000181ACA /* Assets.xcassets */; };
 		EE022B94271EDC4000181ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE022B92271EDC4000181ACA /* LaunchScreen.storyboard */; };
-		EE022B9C271EDDA100181ACA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE022B9B271EDDA100181ACA /* ViewModel.swift */; };
 		EE022B9E271EDDA900181ACA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE022B9D271EDDA900181ACA /* Model.swift */; };
 		EE2BBE91271EE801004D61DD /* funko_pop.csv in Resources */ = {isa = PBXBuildFile; fileRef = EE2BBE90271EE801004D61DD /* funko_pop.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34047CD0DFAF534A50262ED9 /* Pods_funkoPoPDataBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_funkoPoPDataBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53769B86C7E9650F69772C85 /* Pods-funkoPoPDataBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-funkoPoPDataBase.release.xcconfig"; path = "Target Support Files/Pods-funkoPoPDataBase/Pods-funkoPoPDataBase.release.xcconfig"; sourceTree = "<group>"; };
+		DA7888D907F2BFD8F25CF444 /* Pods-funkoPoPDataBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-funkoPoPDataBase.debug.xcconfig"; path = "Target Support Files/Pods-funkoPoPDataBase/Pods-funkoPoPDataBase.debug.xcconfig"; sourceTree = "<group>"; };
 		EE022B84271EDC3E00181ACA /* funkoPoPDataBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funkoPoPDataBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE022B87271EDC3E00181ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE022B89271EDC3E00181ACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +28,6 @@
 		EE022B90271EDC4000181ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE022B93271EDC4000181ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE022B95271EDC4000181ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE022B9B271EDDA100181ACA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EE022B9D271EDDA900181ACA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EE2BBE90271EE801004D61DD /* funko_pop.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = funko_pop.csv; path = "../../../../../Downloads/funko-pop-data-master/funko_pop.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC384E93C9DD0268896FB01F /* Pods_funkoPoPDataBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BBE5911F8D48285E6968202 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34047CD0DFAF534A50262ED9 /* Pods_funkoPoPDataBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EC3C841A3A56D0BFCBC1A01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA7888D907F2BFD8F25CF444 /* Pods-funkoPoPDataBase.debug.xcconfig */,
+				53769B86C7E9650F69772C85 /* Pods-funkoPoPDataBase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EE022B7B271EDC3E00181ACA = {
 			isa = PBXGroup;
 			children = (
 				EE022B86271EDC3E00181ACA /* funkoPoPDataBase */,
 				EE022B85271EDC3E00181ACA /* Products */,
+				7EC3C841A3A56D0BFCBC1A01 /* Pods */,
+				7BBE5911F8D48285E6968202 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +85,6 @@
 			children = (
 				EE022B87271EDC3E00181ACA /* AppDelegate.swift */,
 				EE022B89271EDC3E00181ACA /* SceneDelegate.swift */,
-				EE022B9B271EDDA100181ACA /* ViewModel.swift */,
 				EE022B9D271EDDA900181ACA /* Model.swift */,
 				EE022B8B271EDC3E00181ACA /* ViewController.swift */,
 				EE2BBE90271EE801004D61DD /* funko_pop.csv */,
@@ -80,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE022B98271EDC4000181ACA /* Build configuration list for PBXNativeTarget "funkoPoPDataBase" */;
 			buildPhases = (
+				58BA257AE3CAD4EF7361F39B /* [CP] Check Pods Manifest.lock */,
 				EE022B80271EDC3E00181ACA /* Sources */,
 				EE022B81271EDC3E00181ACA /* Frameworks */,
 				EE022B82271EDC3E00181ACA /* Resources */,
+				E47F5DDB73966961F49C33C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58BA257AE3CAD4EF7361F39B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-funkoPoPDataBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47F5DDB73966961F49C33C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-funkoPoPDataBase/Pods-funkoPoPDataBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-funkoPoPDataBase/Pods-funkoPoPDataBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-funkoPoPDataBase/Pods-funkoPoPDataBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE022B80271EDC3E00181ACA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -147,7 +213,6 @@
 				EE022B9E271EDDA900181ACA /* Model.swift in Sources */,
 				EE022B8C271EDC3E00181ACA /* ViewController.swift in Sources */,
 				EE022B88271EDC3E00181ACA /* AppDelegate.swift in Sources */,
-				EE022B9C271EDDA100181ACA /* ViewModel.swift in Sources */,
 				EE022B8A271EDC3E00181ACA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +349,7 @@
 		};
 		EE022B99271EDC4000181ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA7888D907F2BFD8F25CF444 /* Pods-funkoPoPDataBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +377,7 @@
 		};
 		EE022B9A271EDC4000181ACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53769B86C7E9650F69772C85 /* Pods-funkoPoPDataBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

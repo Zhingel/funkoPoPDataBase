@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewController: UIViewController {
+    let funkoCollection = loadCSV(from: "funko_pop")
     var tableView = UITableView()
     
     override func viewDidLoad() {
@@ -28,15 +30,19 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        funkoCollection.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = loadCSV(from: "funko_pop")[indexPath.row].title
-        cell.imageView?.image = UIImage(named: "1")
+        cell.textLabel?.text = funkoCollection[indexPath.row].title
+        let image = funkoCollection[indexPath.row].imageName.replacingOccurrences(of: "https://www.hobbydb.com/", with: "https://images.hobbydatabase.com/")
+        let url = URL(string: image)
+        cell.imageView?.sd_setImage(with: url, completed: nil)
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        100
+    }
     
 }
