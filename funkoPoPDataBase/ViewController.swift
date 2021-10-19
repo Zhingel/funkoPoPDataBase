@@ -8,12 +8,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var tableView = UITableView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView = UITableView(frame: self.view.bounds, style: UITableView.Style.plain)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.backgroundColor = UIColor.white
+                
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        view.addSubview(tableView)
     }
 
 
 }
 
+
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = loadCSV(from: "funko_pop")[indexPath.row].title
+        cell.imageView?.image = UIImage(named: "1")
+        return cell
+    }
+    
+    
+}
